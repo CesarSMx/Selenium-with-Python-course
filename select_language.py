@@ -1,7 +1,7 @@
 import unittest
 from pyunitreport import HTMLTestRunner
 from selenium import webdriver
-from selenium.webdriver.support.ui import Select #this submodule is for properly inspect dropdown menu's
+from selenium.webdriver.support.ui import Select #this submodule is for properly inspect dropdown menu's as lists
 
 class LanguageOptions(unittest.TestCase):
     @classmethod 

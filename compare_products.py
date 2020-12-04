@@ -30,7 +30,6 @@ class CompareProducts(unittest.TestCase):
 
         alert = driver.switch_to_alert()
         alert_text = alert.text
-
         self.assertEqual('Are you sure you would like to remove all products from your comparison?', alert_text)
         alert.accept()
 

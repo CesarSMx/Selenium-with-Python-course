@@ -1,7 +1,7 @@
 import unittest
 from pyunitreport import HTMLTestRunner
 from selenium import webdriver
-#the module sleep from time library allows to add a delay timer in our script.
+#the module sleep from time library allow us add a delay timer in our script.
 from time import sleep
 
 class NavigationTest(unittest.TestCase):
@@ -26,8 +26,7 @@ class NavigationTest(unittest.TestCase):
         search_field.send_keys('soskil se la come')
         search_field.submit()
 
-        #the sleep module it's not recommended because it makes longer the execute time of the script.
-        #it only be used when we need to see how the scripts works.
+        #the sleep module it's not recommended because it makes longer the execution time of the script.
         #Never use it in production
         sleep(3)
         driver.back()
