@@ -4,7 +4,7 @@ from selenium import webdriver
 from time import sleep
 from selenium.webdriver.support.ui import Select
 
-class HelloWorld(unittest.TestCase):
+class AddRemoveElements(unittest.TestCase):
     @classmethod 
     def setUpClass(cls):
         driver_path = r'/mnt/c/Users/cesar/Documents/desarrollo/Selenium/chromedriver.exe'
@@ -29,6 +29,7 @@ class HelloWorld(unittest.TestCase):
 
         for i in range(elements_to_add):
             add_button.click()
+
         sleep(2)
         for i in range(elements_to_delete):
             try:
